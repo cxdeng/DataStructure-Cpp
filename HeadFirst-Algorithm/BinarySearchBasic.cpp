@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int binarySearchAlternative(const std::vector<int> &arr, int target);
+int binarySearchBasic(const std::vector<int> &arr, int target);
 
 /**
  *
@@ -12,7 +12,7 @@ int binarySearchAlternative(const std::vector<int> &arr, int target);
  * @return 找到则返回索引
  *         找不到返回-1
  */
-int binarySearchAlternative(const std::vector<int> &arr, int target)
+int binarySearchBasic(const std::vector<int> &arr, int target)
 {
     if (arr.empty()) return -1;  // Handle empty vector.
 
