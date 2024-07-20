@@ -25,7 +25,6 @@ int BinarySearch::binarySearchBasic(const vector<int> &arr, int target)
     return -1;
 }
 
-
 int BinarySearch::binarySearchAlternative(const vector<int> &arr, int target)
 {
     int left = 0;
@@ -49,4 +48,30 @@ int BinarySearch::binarySearchAlternative(const vector<int> &arr, int target)
     }
 
     return -1;
+}
+
+int BinarySearch::binarySearchBalance(const vector<int> &arr, int target)
+{
+    int left = 0;
+    int right = arr.size();
+
+    while (right - left > 1)
+    {
+        int mid = left + (right - left) / 2;
+        if (target < arr[mid])
+        {
+            right = mid;
+        }
+        else
+        {
+            left = mid;
+        }
+    }
+
+    if (target == arr[left])
+    {
+        return left;
+    }
+
+    return -1;    
 }
