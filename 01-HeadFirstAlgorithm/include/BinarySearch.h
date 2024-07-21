@@ -7,4 +7,5 @@ public:
     static int binarySearchBasic(const vector<int> &arr, int target);
     static int binarySearchAlternative(const vector<int> &arr, int target);
     static int binarySearchBalance(const vector<int> &arr, int target);
+    static int binarySearchJava(const vector<int> &arr, int target);
 };
